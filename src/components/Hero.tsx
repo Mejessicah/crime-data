@@ -23,14 +23,14 @@ const Hero = () => {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="text-center space-y-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white animate-fade-down">
+          <h1 className="text-4xl md:text-6xl font-bold text-white animate-[slide-in-right_1s_ease-out]">
             Unveiling the Power of <span className="text-gradient">Crime Analytics</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto animate-fade-up delay-200">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto animate-[slide-in-right_1s_ease-out_0.2s] opacity-0 [animation-fill-mode:forwards]">
             Your gateway to real-time crime data and predictive insights.
             Transform raw data into actionable intelligence.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-[slide-in-right_1s_ease-out_0.4s] opacity-0 [animation-fill-mode:forwards]">
             <button className="group bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md text-lg font-medium transition-all flex items-center justify-center gap-2 hover:scale-105">
               Schedule a Demo
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />

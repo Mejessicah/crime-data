@@ -73,10 +73,21 @@ export default {
             transform: "translateY(0)",
           },
         },
+        "slide-in-right": {
+          "0%": {
+            transform: "translateX(100%)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateX(0)",
+            opacity: "1",
+          },
+        },
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
         "fade-down": "fade-down 0.5s ease-out",
+        "slide-in-right": "slide-in-right 1s ease-out",
       },
     },
   },
