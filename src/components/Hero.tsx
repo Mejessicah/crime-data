@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video Background */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 animate-fade-in">
         <video
           autoPlay
           loop
@@ -22,20 +22,20 @@ const Hero = () => {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
-        <div className="text-center space-y-8 animate-fade-up">
-          <h1 className="text-4xl md:text-6xl font-bold text-white">
+        <div className="text-center space-y-8">
+          <h1 className="text-4xl md:text-6xl font-bold text-white animate-fade-down">
             Unveiling the Power of <span className="text-gradient">Crime Analytics</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto animate-fade-up delay-200">
             Your gateway to real-time crime data and predictive insights.
             Transform raw data into actionable intelligence.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="group bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md text-lg font-medium transition-all flex items-center justify-center gap-2">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up delay-300">
+            <button className="group bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-md text-lg font-medium transition-all flex items-center justify-center gap-2 hover:scale-105">
               Schedule a Demo
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </button>
-            <button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-md text-lg font-medium transition-colors">
+            <button className="bg-secondary hover:bg-secondary/90 text-white px-8 py-3 rounded-md text-lg font-medium transition-colors hover:scale-105">
               Learn More
             </button>
           </div>
